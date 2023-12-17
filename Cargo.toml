@@ -11,4 +11,9 @@ path = "src/day-01-v1.rs"
 name = "day-01-v2"
 path = "src/day-01-v2.rs"
 
-[dependencies]
+[[bin]]
+name = "day-02"
+path = "src/day-02.rs"
+
+[dev-dependencies]
+indoc = "2.0.4"

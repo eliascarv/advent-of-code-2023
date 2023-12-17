@@ -84,21 +84,22 @@ impl Solver for Part2 {
 #[cfg(test)]
 mod tests {
     use super::*;
+    use indoc::indoc;
 
     #[test]
     fn test_part1() {
-        let input = "
+        let input = indoc! {"
             1abc2
             pqr3stu8vwx
             a1b2c3d4e5f
             treb7uchet
-        ";
+        "};
         assert_eq!(Part1::solve(input), 142)
     }
 
     #[test]
     fn test_part2() {
-        let input = "
+        let input = indoc! {"
             two1nine
             eightwothree
             abcone2threexyz
@@ -106,7 +107,7 @@ mod tests {
             4nineeightseven2
             zoneight234
             7pqrstsixteen
-        ";
+        "};
         assert_eq!(Part2::solve(input), 281)
     }
 }
